@@ -10,6 +10,8 @@ arch:
 startup: application
 webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
 boot: auto
+map:
+  - share:rw
 ports:
   8000/tcp: 8000
 image: ghcr.io/donkie/spoolman
