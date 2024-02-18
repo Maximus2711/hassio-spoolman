@@ -12,6 +12,14 @@ webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
 boot: auto
 map:
   - share:rw
+  - homeassistant_config:rw
+  - addon_config:rw
+  - ssl:rw
+  - addons:rw
+  - backup:rw
+  - share:rw
+  - media:rw
+  - all_addon_configs:rw
 ports:
   8000/tcp: 8000
 image: ghcr.io/donkie/spoolman
